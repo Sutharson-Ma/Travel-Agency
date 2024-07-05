@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="travel.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <section class="first-page">
+      <img class="travel" src="tavelsintro.png" alt="no-tavelsintro" />
+      <div class="container fir">
+        <div class="menu-bar">
+          <p class="logo"><img src="Logo.png" alt="" /></p>
+          <div class="blur"></div>
+          <div class="bar">
+            <ul class="information">
+              <li><a class="button" href="#">Desitnations</a></li>
+              <li><a class="button" href="#">Hotels</a></li>
+              <li><a class="button" href="#">Flights</a></li>
+              <li><a class="button" href="#">Bookings</a></li>
+            </ul>
+            <ul class="signing">
+              <li><a class="button-s" href="#">Login</a></li>
+              <li><a class="button-s" href="#">Sign up</a></li>
+              <li>
+                <a class="button" href="#"
+                  ><select class="l-opt" name="lanuage" id="lanuage">
+                    <option value="volvo">Eng</option>
+                    <option value="saab">Tam</option>
+                    <option value="opel">French</option>
+                    <option value="audi">Italy</option>
+                  </select>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container sec">
+      <div class="info">
+        <h4 class="route">Best Destinations around the world</h4>
+        <h1 class="except">Travel, enjoy and live a new and full life</h1>
+        <p class="reality">
+          Built Wicket longer admire do barton vanity itself do in it. Preferred
+          to sportsmen it engrossed listening. Park gate sell they west hard for
+          the.
+        </p>
+        <div class="buttons">
+          <a href="#"><p class="play">Find out more</p></a>
+          <div class="demo" onclick="openvideo();">
+                <p class="fa-play-o"><i class="fa-solid fa-play"></i></p
+              ></a>
+              <a href="#"  ><p>Play Demo</p></a>
+            </div>
+          
+          <div class="travels">
+            <video src="traveling.mp4" controls="true"></video>
+            <i class="fa-solid fa-x" onclick="closevideo();"></i>
+          </div>
+          <div class="pattern"><img src="pattren.png" alt="" /></div>
+        </div>
+        <script type="text/javascript">
+          function openvideo() {
+          var travels = document.querySelector(".travels");
+          travels.classList.add("active");
+          var video=document.querySelector("video");
+          video.pause();
+          video.currentTime=0;
+          }
+          function closevideo(){
+            var travels = document.querySelector(".travels");
+            travels.classList.remove("active");
+          }
+        </script>
+      </div>
+    </div>
+    <section>
+      <div class="container thir">
+        <div class="category">
+          <h5 class="cat p">CATEGORY</h5>
+          <h1 class="serv v">We Offer Best Services</h1>
+        </div>
+        <div class="card">
+          <a href="">
+            <div class="icon side">
+              <img src="icon1.png" alt="no-icon" />
+              <h5 class="i-head o">Calculated Weather</h5>
+              <p class="i-exg p">
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </div>
+          </a>
+          <a href="">
+            <div class="icon">
+              <img src="icon4.png" alt="no-icon" />
+              <h5 class="i-head o">Best Flights</h5>
+              <p class="i-exg p">
+                Engrossed listening. Park gate sell they west hard for the.
+              </p>
+            </div>
+          </a>
+          <a href="">
+            <div class="icon">
+              <img src="icon3.png" alt="no-icon" />
+              <h5 class="i-head o">Local Events</h5>
+              <p class="i-exg p">
+                Barton vanity itself do in it. Preferd to men it engrossed
+                listening.
+              </p>
+            </div>
+          </a>
+          <a href="">
+            <div class="icon">
+              <img src="icon2.png" alt="no-icon" />
+              <h5 class="i-head o">Customization</h5>
+              <p class="i-exg p">
+                We deliver outsourced aviation services for military customers
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container trip-plan">
+        <div class="category">
+          <h5 class="cat p">Top Selling</h5>
+          <h1 class="serv v">Top Destinations</h1>
+        </div>
+        <div class="cardes">
+          <a href="">
+            <div class="carde">
+              <div class="carde-image">
+                <img src="img-card3.png" alt="no-img" class="rome" />
+              </div>
+              <div class="demoe">
+                <div class="trip">
+                  <p>Rome, Italty</p>
+                  <p>$5,42k</p>
+                </div>
+                <div class="trip-place">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <p>10 Days Trip</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="carde">
+              <div class="carde-image">
+                <img src="img-card2.png" alt="no-img" class="rome" />
+              </div>
+              <div class="demoe">
+                <div class="trip">
+                  <p>London, UK</p>
+                  <p>$4.2k</p>
+                </div>
+                <div class="trip-place">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <p>12 Days Trip</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="carde">
+              <div class="carde-image">
+                <img src="img-card1.png" alt="no-img" class="rome" />
+              </div>
+              <div class="demoe">
+                <div class="trip">
+                  <p>Full Europe</p>
+                  <p>$15k</p>
+                </div>
+                <div class="trip-place">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <p>28 Days Trip</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container pop-up">
+        <div class="message">
+          <h5 class="easy p">Easy and Fast</h5>
+          <h1 class="step v">Book your next trip in 3 easy steps</h1>
+
+          <div class="explain">
+            <img class="i-icon" src="Group7.png" alt="no-icon" />
+            <div class="eg">
+              <h6 class="p">Choose Destination</h6>
+              <p class="l-lorem p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+          </div>
+          <div class="explain">
+            <img class="i-icon" src="Group8.png" alt="no-icon" />
+            <div class="eg">
+              <h6 class="p">Make Payment</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+          </div>
+          <div class="explain">
+            <img class="i-icon" src="Group11.png" alt="no-icon" />
+            <div class="eg">
+              <h6 class="p">Reach Airport on Selected Date</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="notify">
+          <div class="infr">
+            <img src="notify.png" alt="" />
+            <h6 class="to p">Trip To Greece</h6>
+            <p class="Robbin p">14-29 June | &nbsp; by Robbin joseph</p>
+            <div class="g-icon">
+              <div class="leaf">
+                <a href=""><i class="fa-solid fa-leaf"></i></a>
+              </div>
+              <div class="leaf">
+                <a href=""><i class="fa-regular fa-map"></i></a>
+              </div>
+              <div class="leaf">
+                <a href=""> <i class="fa-solid fa-paper-plane"></i></a>
+              </div>
+            </div>
+            <div class="people">
+              <div class="Built">
+                <a href=""><i class="fa-solid fa-building-user"></i></a>
+                <p class="Robbin p">24 people going</p>
+              </div>
+              <div class="heart">
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <div class="pops">
+                  <img src="Mask Group.png" alt="no-mask" />
+                  <div class="success">
+                    <p class="Robbin p">Ongoing</p>
+                    <p class="to p">Trip to rome</p>
+                    <p class="to p">
+                      <span class="to pp">40%</span>&nbsp; completed
+                    </p>
+                    <div class="percen">
+                      <div class="per"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="b-cards">
+      <div class="container sticky-card">
+        <div class="inf-cards">
+          <h5 class="easy p">Testimonials</h5>
+          <h1 class="steps v">What people say about Us.</h1>
+        </div>
+
+        <div class="container-s">
+          <script src="es.js"></script>
+          <div class="card-stack">
+            <div>
+              <ul class="card-list">
+                <li class="cards">
+                  <p class="windows p">
+                    “On the Windows talking painted pasture yet its express
+                    parties use. Sure last upon he same as knew next. Of
+                    believed or diverted no.”
+                  </p>
+                  <h5 class="t-tit p p">Mike taylor</h5>
+                  <p class="n-names p">Lahore, Pakistan</p>
+
+                  <div class="sticky-img">
+                    <img src="Image (1).png" alt="" />
+                  </div>
+                </li>
+                <li class="cards">
+                  <p class="windows p">
+                    “On the Windows talking painted pasture yet its express
+                    parties use. Sure last upon he same as knew next. Of
+                    believed or diverted no.”
+                  </p>
+                  <h5 class="t-tit p p">Chris Thomas</h5>
+                  <p class="n-names p">CEO of Red Button</p>
+
+                  <div class="sticky-img">
+                    <img class="profile" src="pro-fiile.jpg" alt="" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="b-up-down">
+              <div>
+                <a class="buttons-s next" href="#.card-stack">
+                  <i class="fa-solid fa-angle-up"></i
+                ></a>
+              </div>
+              <div>
+                <a class="buttons-s prev" href="#.card-stack">
+                  <i class="fa-solid fa-angle-down"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ul class="com-logo">
+          <li class="ul"><img src="c-logo (1).png" alt="no-c-logo" /></li>
+          <li class="ul"><img src="c-logo2.png" alt="no-c-logo" /></li>
+          <li class="ul"><img src="c-logo3.png" alt="no-c-logo" /></li>
+          <li class="ul"><img src="c-logo4.png" alt="no-c-logo" /></li>
+          <li class="ul"><img src="c-logo5.png" alt="no-c-logo" /></li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="container email">
+        <img class="tele" src="Group 77.png" alt="" />
+        <img class="pattern-n" src="pattern.png" alt="" />
+        <h5 class="Subscribe p">
+          Subscribe to get information, latest news and other interesting offers
+          about Cobham
+        </h5>
+        <div class="s-sends">
+          <input type="email" id="email" name="email" class="ema" />
+          <button class="sends">
+            <a class="em" href="mailto:sutharson.in@gmail.com" >Send Email</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container footer">
+        <div>
+          <h5 class="Jado">Jadoo.</h5>
+          <p class="Jados">
+            Book your trip in minute, get full Control for much longer.
+          </p>
+        </div>
+        <div class="footer-s">
+          <ul class="f-info">
+            <h5 class="tit p">Company</h5>
+            <a href=""><li class="tit-s p">About</li></a>
+            <a href=""><li class="tit-s p">Careers</li></a>
+            <a href=""><li class="tit-s p">Mobile</li></a>
+          </ul>
+          <ul class="f-info">
+            <h5 class="tit p">Contact</h5>
+            <a href=""><li class="tit-s p">Help/FAQ</li></a>
+            <a href=""><li class="tit-s p">Press</li></a>
+            <a href=""><li class="tit-s p">Affilates</li></a>
+          </ul>
+          <ul class="f-info">
+            <h5 class="tit p">More</h5>
+            <a href=""> <li class="tit-s p p">Airlinefees</li></a>
+            <a href=""> <li class="tit-s p p">Airline</li></a>
+            <a href=""> <li class="tit-s p p">Low fare tips</li></a>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <div class="contact">
+            <a href="https://www.instagram.com/?hl=en" class="social-img"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/x" class="social-img"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com/" class="social-img">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+          <div><p class="our-app">Discover our app</p></div>
+          <div class="s-m-collections">
+            <a href="https://play.google.com/store/games?device=windows"
+              ><div class="s-media">
+                <i class="fa-brands fa-google-play"></i>
+                <p class="apps">GET IT ON GOOGLE PLAY</p>
+              </div>
+            </a>
+            <a href="https://www.apple.com/app-store/"
+              ><div class="s-media">
+                <i class="fa-brands fa-apple"></i>
+                <p class="apps">AVAILABLE ON THE APPLE STORE</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="finish">
+        <p>All rights sutharson.in@gmail.com</p>
+      </div>
+    </section>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>
